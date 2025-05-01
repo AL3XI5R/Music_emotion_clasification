@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix
 
-folder_path = r'C:\Users\ALEXIS\Documents\Sinclair\Spring Semester\2266_python\Honors project\Selected_songs'
+folder_path = r{PATH TO THE FOLDER WITH THE SONGS INSIDE}
 
 # ======= SONGS WITH THEIR EMOTION =======
 file_to_emotion = {
@@ -152,8 +152,8 @@ def load_and_augment(file_path, duration=60):
     y, sr = librosa.load(file_path, duration=duration)
     return [
         y, # ORIGINAL
-        librosa.effects.pitch_shift(y=y, sr=sr, n_steps=2),   # CANCION 2 SEMITONOS ARRIBA
-        librosa.effects.pitch_shift(y=y, sr=sr, n_steps=-2)   # CANCION 2 SEMITONOS ABAJO
+        librosa.effects.pitch_shift(y=y, sr=sr, n_steps=2),   # SONG 2 SEMITONES UP
+        librosa.effects.pitch_shift(y=y, sr=sr, n_steps=-2)   # SONG 2 SEMITONES DOWN
     ]
 
 
