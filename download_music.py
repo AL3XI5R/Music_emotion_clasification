@@ -11,11 +11,11 @@ if not os.path.exists(output_folder):
     os.makedirs(output_folder)
 
 
-songs_file = r"C:\Users\ALEXIS\Documents\Sinclair\Spring Semester\2266_python\Honors project\Code\songs.txt"
+songs_file = r{PATH WHERE THE SONGS.TXT IS LOCATED}
 
 
 #Seems like without this it wont work :///
-ffmpeg_path = r"C:\ffmpeg\bin"
+ffmpeg_path = r"C:\ffmpeg\bin" #<== IF YOUR FFMPEG IS IN ANOTHER LOCATION, INDICATE SO
 
 #Download and convert
 subprocess.run([
