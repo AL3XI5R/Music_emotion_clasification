@@ -307,7 +307,6 @@ if uploaded_file is not None:
             "Spectral Centroid": f"{spec_centroid:.1f} Hz",
             "Zero Crossing Rate": f"{zero_crossings:.4f}",
             "RMS Energy": f"{rms:.4f}",
-            "Spectral Rolloff": f"{rolloff:.1f} Hz",
             "Spectral Bandwidth": f"{bandwidth:.1f} Hz",
             "Key Index": key_idx
         }
@@ -337,7 +336,6 @@ if uploaded_file is not None:
             st.markdown(f"- **RMS Energy (Intensity):** {readable_features['RMS Energy']}")
             st.markdown(f"- **Spectral Rolloff (Edge of energy):** {readable_features['Spectral Rolloff']}")
             st.markdown(f"- **Spectral Bandwidth (Width of sound):** {readable_features['Spectral Bandwidth']}")
-            st.markdown(f"- **Key Detection (Dominant tone):** {readable_features['Key Index']}")
 
         
 
